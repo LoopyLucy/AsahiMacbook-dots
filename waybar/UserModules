@@ -1,0 +1,25 @@
+//* ---- 💫 https://github.com/JaKooLit 💫 ---- *//
+/* Waybar Modules Extras */
+
+/* This is where you can add Extra Modules you wish. copy.sh will try to restore*/
+/* this file along with the unique configs and styles. */
+/* IMPORTANT, be mindful with , or ". else waybar will not start */
+
+{
+"hyprland/workspaces": {
+	"active-only": true,
+	"all-outputs": false,
+	"format": "{icon}",
+	"show-special": false,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    	"persistent-workspaces": {
+      		"*": 5
+	},
+	"format-icons": {
+		"active": "",
+		"default": "",
+	},
+},
+}

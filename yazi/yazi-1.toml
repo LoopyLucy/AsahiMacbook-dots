@@ -1,0 +1,10 @@
+[opener]
+edit = [
+    { exec = 'host-spawn nvim "$@"', block = true, desc = "Neovim" }
+]
+
+[open]
+prepend_rules = [
+    { name = "*.txt", use = "edit" },
+    { mime = "text/*", use = "edit" }
+]
